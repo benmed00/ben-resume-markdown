@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>BENYAKOUB Resume</title>
+  <title>BENYAKOUB Resume-CV</title>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
@@ -13,7 +13,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="manifest" href="/benyakoub.fr">
 </head>
 
 <body>
@@ -25,6 +25,74 @@
         document.getElementById('content').innerHTML = marked.parse(md);
       });
   </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <p>&copy; <span id="current-year"></span> BENYAKOUB. All rights reserved.</p>
+        </div>
+        <div class="footer-section">
+          <a href="mailto:benyakoub.pro@gmail.com" class="footer-link">Contact</a>
+          <span class="divider">|</span>
+          <a href="https://linkedin.com/in/benyakoub" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+          <span class="divider">|</span>
+          <a href="https://github.com/benmed00" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  
+    <script>
+      // Add current year automatically
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+  
+    <style>
+      .site-footer {
+        border-top: 1px solid #eaecef;
+        padding: 2rem 1rem;
+        margin-top: 3rem;
+        background-color: #f6f8fa;
+      }
+  
+      .footer-content {
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+  
+      .footer-section {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+  
+      .footer-link {
+        color: #0366d6;
+        text-decoration: none;
+        font-size: 0.9rem;
+      }
+  
+      .footer-link:hover {
+        text-decoration: underline;
+      }
+  
+      .divider {
+        color: #d1d5da;
+      }
+  
+      @media (max-width: 768px) {
+        .footer-content {
+          flex-direction: column;
+          gap: 0.5rem;
+          text-align: center;
+        }
+      }
+    </style>
 </body>
+
+
 
 </html>
